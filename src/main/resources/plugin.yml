@@ -1,0 +1,9 @@
+name: KeepInventory
+version: '${project.version}'
+main: com.ashkiano.keepinventory.KeepInventory
+api-version: '1.16'
+authors: [ AshKiano ]
+permissions:
+  keepinventory.keep:
+    description: Allows the player to keep their inventory upon death
+    default: op
