@@ -12,6 +12,8 @@ public class KeepInventory extends JavaPlugin implements Listener {
     public void onEnable() {
         // Register the event listener
         this.getServer().getPluginManager().registerEvents(this, this);
+
+        Metrics metrics = new Metrics(this, 21327);
     }
 
     @EventHandler
