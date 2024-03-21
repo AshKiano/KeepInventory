@@ -14,6 +14,8 @@ public class KeepInventory extends JavaPlugin implements Listener {
         this.getServer().getPluginManager().registerEvents(this, this);
 
         Metrics metrics = new Metrics(this, 21327);
+
+        this.getLogger().info("Thank you for using the KeepInventory plugin! If you enjoy using this plugin, please consider making a donation to support the development. You can donate at: https://donate.ashkiano.com");
     }
 
     @EventHandler
