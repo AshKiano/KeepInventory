@@ -19,12 +19,12 @@ public class KeepInventory extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        //TODO tuto chybu vypisovat i OP hráčům do chatu
-        if (!isAshLibPresent()) {
-            getLogger().severe("AshLib plugin is missing! Please download and install AshLib to run KeepInventory. (can be downloaded from: https://www.spigotmc.org/resources/ashlib.118282/ )");
-            Bukkit.getPluginManager().disablePlugin(this);
-            return;
-        }
+//        //TODO tuto chybu vypisovat i OP hráčům do chatu
+//        if (!isAshLibPresent()) {
+//            getLogger().severe("AshLib plugin is missing! Please download and install AshLib to run KeepInventory. (can be downloaded from: https://www.spigotmc.org/resources/ashlib.118282/ )");
+//            Bukkit.getPluginManager().disablePlugin(this);
+//            return;
+//        }
         new PluginStatistics(this);
         
         // Register the event listener
@@ -94,8 +94,8 @@ public class KeepInventory extends JavaPlugin implements Listener {
         }
     }
 
-    private boolean isAshLibPresent() {
-        Plugin plugin = Bukkit.getPluginManager().getPlugin("AshLib");
-        return plugin != null && plugin.isEnabled();
-    }
+//    private boolean isAshLibPresent() {
+//        Plugin plugin = Bukkit.getPluginManager().getPlugin("AshLib");
+//        return plugin != null && plugin.isEnabled();
+//    }
 }
